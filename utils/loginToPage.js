@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const loginToPage = async (page) => {
   const EMAIL = process.env.IMDB_EMAIL;
-  const PASSWORD =  process.env.PASSWORD;
+  const PASSWORD =  process.env.IMDB_PASSWORD;
   const LIST_ID = process.env.IMDB_LIST_ID;
 
   await page.waitForSelector("#ap_email");
